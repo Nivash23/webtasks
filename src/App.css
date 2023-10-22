@@ -30,7 +30,74 @@ input{
 #database{
   background-color: rgb(70, 130, 70);
   margin-top: 50%;
+  margin-left: 50%;
 }
 #status{
   display:none;
+}
+#edit{
+  display:none;
+}
+#delete{
+  display:none;
+}
+#cards{
+  list-style: none;
+}
+@media(max-width:450px)
+{
+  #userInteraction{
+  margin-left: 20%;
+  margin-top: 50px;
+}
+#head{
+  text-align: center;
+  color:green;
+}
+button{
+  background-color: green;
+  color:white;
+  height:25px;
+  width:100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(52, 73, 52, 0.4) ;
+  margin-left: 20%;
+}
+input{
+  margin:10px 10px 10px 10px;
+  width:200px;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(67,65, 65, .4) ;
+}
+#datas{
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  justify-content: space-between;
+}
+#database{
+  background-color: rgb(70, 130, 70);
+  margin-top: 95%;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+#status{
+  display:none;
+}
+#edit{
+  display:none;
+  background-color: rgb(44, 186, 44);
+}
+#delete{
+  display:none;
+  background-color: rgb(160, 49, 49);
+
+}
+#buttons{
+  margin-left: 30px;
+}
+#cards{
+  list-style: none;
+}
 }
