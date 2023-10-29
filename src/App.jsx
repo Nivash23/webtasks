@@ -32,11 +32,25 @@ function App() {
       status.style.display = 'inline';
       del.style.display = 'inline';
       edt.style.display = 'inline';
+
       
 
 
       setData(false);
-    }
+  }
+  function setstatus1()
+  {
+    let stats = document.getElementById('sts');
+    stats.innerText = `completed`;
+
+  }
+  function setstatus2()
+  {
+    let stats = document.getElementById('sts');
+    stats.innerText = `status : Not completed`;
+
+  }
+  
   // let name = document.getElementById('name');
   // let description = document.getElementById('descript');
   // let todoname = name.value;
@@ -53,30 +67,36 @@ function App() {
       </div>
      <div id='datas'>
         <h4>My todos</h4>
-        <h4>Status :<span class='dropdown-toggle' data-bs-toggle='dropdown'>All
+        <h4>Status :<span>
+          <select>
+            <option>All</option>
+            <option>completed</option>
+            <option>Not completed</option>
+          </select>
         </span>
-        <ul class='dropdown-menu'>
-          <li> <a class='dropdown-item' href='#'>completed</a></li>
-          <li> <a class='dropdown-item' href='#'>Not completed</a></li>
-          
-          </ul>
+       
         </h4>
         <ul id='cards'>
           <li>
 
         <div id='database'>
-         <p id='username'></p>
-        <p id='description'></p>
-        <p id='status'>status:<span  class='dropdown-toggle' data-bs-toggle='dropdown'></span>
-          <ul class='dropdown-menu'>
-            <li> <a class='dropdown-item' href='#'></a>completed</li>
-            <li> <a class='dropdown-item' href='#'></a>Not completed</li>
-          </ul></p>
-        <div id='buttons'>
-          <button id='edit'  type='button'>Edit</button>
-          <button id='delete' type='button'>Delete</button>
-        </div>
-      </div>
+          <p id='username'></p>
+         <p id='description'></p>
+              <div id='status'>status: <span>
+                
+                <select>
+                  
+                
+              <option></option>  
+              <option>completed</option>  
+              <option>Not completed</option>  
+         </select>
+              </span></div>
+         <div id='buttons'>
+           <button id='edit'  type='button'>Edit</button>
+                <button id='delete' type='button'>Delete</button>
+         </div>
+       </div>
           </li>
         </ul>
       </div>
