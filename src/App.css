@@ -1,111 +1,33 @@
-#userInteraction{
-  margin-left: 20%;
-  margin-top: 50px;
-}
-#head{
+#container{
   text-align: center;
-  color:green;
-}
-button{
-  background-color: green;
-  color:white;
-  height:25px;
-  width:150px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(52, 73, 52, 0.4) ;
-}
-input{
-  margin:10px 10px 10px 10px;
-  width:350px;
-  height: 25px;
-  border-radius: 5px;
-  /* box-shadow: 0px 0px 20px rgba(21, 21, 21, 0.4) ; */
 }
 #datas{
   display: flex;
-  margin-left: 120px;
-  margin-right: 120px;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 40px 0px 0px 120px;
 }
-#database{
-  background-color: rgb(70, 130, 70);
-  margin-top: 50%;
-  margin-left: 50%;
-}
-#status{
-  display:none;
-}
-#edit{
-  display:none;
-}
-#delete{
-  display:none;
-}
-#cards{
-  list-style: none;
-}
-#buttons{
-  margin-left: 30px;
-}
-@media(max-width:450px)
-{
-  #userInteraction{
-  margin-left: 20%;
-  margin-top: 50px;
-}
-#head{
-  text-align: center;
-  color:green;
-}
-button{
-  background-color: green;
-  color:white;
-  height:25px;
-  width:100px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(52, 73, 52, 0.4) ;
-  margin-left: 20%;
+#add{
+  background-color: rgb(127, 219, 127);
 }
 input{
-  margin:10px 10px 10px 10px;
-  width:200px;
-  height: 25px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px rgba(67,65, 65, .4) ;
+  margin:20px 20px 20px 20px;
+  border-radius: 10px;
 }
-#datas{
-  display: flex;
-  margin-left: 0px;
-  margin-right: 0px;
-  justify-content: space-between;
-}
-#database{
-  background-color: rgb(70, 130, 70);
-  margin-top: 95%;
-  margin-left: 10px;
-  margin-right: 50px;
-}
-#status,p{
-  display:none;
-}
-#edit{
-  display:none;
-  background-color: rgb(44, 186, 44);
-  width:30px;
-}
-#delete{
-  display:none;
-  background-color: rgb(160, 49, 49);
-  width:30px;
-
+select{
+  border-radius: 10px;
 }
 #buttons{
-  margin-left: 30px;
+  display: flex;
+  margin:20px 5px 5px 80px;
 }
-#cards{
-  list-style: none;
+#cardcontainer{
+  background-color: rgb(9, 133, 9);
+  width:300px;
+  height:180px;
+  margin: 50px 200px 0px 0px ;
+  text-align: center;
 }
 li{
-  cursor: pointer;
-}
+  margin: 20px 20px 20px 500px;
+  list-style: none;
 }
