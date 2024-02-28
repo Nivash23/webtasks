@@ -31,3 +31,19 @@ li{
   margin: 20px 20px 20px 500px;
   list-style: none;
 }
+@media screen and (max-width:550px)
+{
+ li{
+  margin: 20px 20px 20px 10px;
+  list-style: none;
+} 
+#datas{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 0px 0px 10px;
+}
+#todohd{
+  margin-right: 140px;
+}
+}

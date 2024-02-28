@@ -35,7 +35,8 @@ function App() {
     <div id="container">
       <h2 id="head">My todo</h2>
       <div id="userInteraction">
-
+        <div>
+          
         <input
           id="name"
           type="text"
@@ -45,6 +46,9 @@ function App() {
           }}
           placeholder="Todo Name"
         />
+        </div>
+        <div>
+
         <input
           id="descript"
           type="text"
@@ -54,13 +58,15 @@ function App() {
           }}
           placeholder="Todo Description"
         />
+        </div>
+        <div>
 
         <button  onClick={formhandler} id="add">
           Add Todo
         </button>
+        </div>
       </div>
       <div id="datas">
-        <h4>My todos</h4>
         <h4>
           Status :
           <span>
@@ -73,6 +79,7 @@ function App() {
             </select>
           </span>
         </h4>
+              <h4 id='todohd'>My todos</h4>
       </div>
         <div>
           <ul id="cards">
